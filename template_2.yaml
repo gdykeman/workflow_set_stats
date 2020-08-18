@@ -1,0 +1,9 @@
+---
+- name: show workflow var
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: show workflow var
+      debug:
+        msg: "{{ my_workflow_var }} is showing up!"
